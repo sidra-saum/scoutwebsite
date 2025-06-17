@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Members| Admin</title>
+    <link rel="stylesheet" href="member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+                <!-- Floating Home Button -->
+        <a href="index.html" class="floating-home-btn">
+            <i class="fas fa-home"></i> HOME
+        </a>
+    <div class="admin-container">
+        <h1>Manage Scout Members</h1>
+        
+        <div class="member-form">
+            <h2>Add/Edit Member</h2>
+            <form id="memberForm">
+                <input type="hidden" id="memberId">
+                <div class="form-group">
+                    <label for="memberName">Full Name</label>
+                    <input type="text" id="memberName" required>
+                </div>
+                <div class="form-group">
+                    <label for="memberRole">Role</label>
+                    <select id="memberRole" required>
+                        <option value="">Select Role</option>
+                        <option value="Scout">Scout</option>
+                        <option value="Parade Leader">Parade Leaders</option>
+                        <option value="Patrol Leader">Patrol Leader</option>
+                        <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
+                        <option value="Senior Patrol Leader">Senior Patrol Leader</option>
+                        <option value="Drum Leader">Drum Leader</option>
+                        <option value="Drumer">Drumer</option>
+                        <option value="Scoutmaster">Scoutmaster</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="memberPatrol">Patrol/Troop</label>
+                    <input type="text" id="memberPatrol">
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancelBtn">Cancel</button>
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="members-list">
+            <h2>Current Members</h2>
+            <table id="membersTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Patrol</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Members will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="memberboth.js"></script>
+    <script src="member.js"></script>
+</body>
+</html>

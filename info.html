@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members| MSSHSS SCOUT</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="members-header">
+        <h1>Our Scout Members</h1>
+    </header>
+        <!-- Floating Home Button -->
+    <a href="index.html" class="floating-home-btn">
+        <i class="fas fa-home"></i> HOME
+    </a>
+    <main>
+        <div class="filter-controls">
+            <select id="roleFilter">
+                <option value="all">All Roles</option>
+                <option value="Scout">Scouts</option>
+                <option value="Parade Leader">Parade Leaders</option>
+                <option value="Patrol Leader">Patrol Leaders</option>
+                <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
+                <option value="Senior Patrol Leader">Senior Patrol Leaders</option>
+                <option value="Drum Leader">Drum Leader</option>
+                <option value="Drumer">Drumer</option>
+                <option value="Scoutmaster">Scoutmasters</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search members...">
+        </div>
+
+        <div class="members-grid" id="membersGrid">
+            <!-- Members will be loaded here -->
+        </div>
+    </main>
+
+    <script src="infoboth.js"></script>
+    <script src="info.js"></script>
+</body>
+</html>
